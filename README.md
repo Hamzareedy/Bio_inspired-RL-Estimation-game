@@ -61,9 +61,7 @@ A custom **4-player trick-taking** environment (Gymnasium) with:
 * Output: logits over tricks $k\in\{0..13\}$ → softmax distribution $p(k)$.
 * **Bid selection**: argmax over expected Estimation score
 
-  $$
-  \arg\max_b\ p(b)(10+b) + \sum_k p(k)\cdot(-|k-b|).
-  $$
+  $\arg\max_b\ p(b)(10+b) + \sum_k p(k)\cdot(-|k-b|).$
 
 ### Training Loop (Alternating)
 
